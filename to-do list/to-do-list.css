@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000; /* black background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: white;
+}
+
+.wrapper {
+  margin-top: 20px;
+}
+
+.todo-card {
+  background: #111;
+  padding: 100px;
+  width: 300px;
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+}
+
+.todo-card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.section-title {
+  font-size: 16px;
+  margin: 15px 0 10px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  font-size: 15px;
+  background: #000;
+  color: white;
+}
+
+#taskInput::placeholder {
+  color: #aaa;
+}
+
+#addBtn {
+  background: #007bff; /* blue add button */
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#addBtn:hover {
+  background: #0056b3;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffb482; /* peach background for tasks */
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: black;
+}
+
+.taskText {
+  flex: 1;
+  margin-left: 8px;
+}
+
+.deleteBtn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+#notes {
+  width: 100%;
+  height: 80px;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  background: #000;
+  color: white;
+}
